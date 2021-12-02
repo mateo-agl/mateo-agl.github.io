@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 55px;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(200, 0%, 35%);
+}
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#clock {
+  padding: 30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 45px 20px 3px hsl(200, 0%, 15%);
+  background-color: hsl(200, 0%, 85%);
+}
+#time-left {
+  background-color: hsl(200, 0%, 95%);
+  border-radius: 40px;
+  font-size: 80px;
+  padding: 40px 60px;
+}
+.controls {
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  margin: 10px 0px;
+}
+#break-length, #session-length {
+  width: 80px;
+}
+.bi {
+  border: none;
+  cursor: pointer;
+}
+@media(max-width: 520px) {
+  * {
+    font-size: 30px;
+  }
+  #clock {
+    height: auto;
+    width: auto;
+  }
+  #time-left {
+    font-size: 50px;
+    padding: 15px 30px;
+  }
+  .controls {
+    height: 30px;
+    margin: 7px 0px;
+  }
+}
+@media(max-height: 540px) {
+  #clock {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+  }
+}
